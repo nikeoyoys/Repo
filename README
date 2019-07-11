@@ -1,0 +1,44 @@
+
+1. 安裝docker CE 
+- 參閱
+
+
+2. 不要用ROOT開幹**不要用ROOT開幹**不要用ROOT開幹**
+
+所以**建立docker用戶群組
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+// 將目前使用者-a 附加 -G=docker的群組
+
+
+3. 測試docker是否安裝成功
+
+docker run hello-world
+
+
+- 顯示正確訊息
+
+
+4.安裝docker-compose
+- 參閱
+
+
+5. 選用image - ㄧjupter/base-notebook
+- 這邊我們選用描述為"Small base image for Jupyter Notebook Stack"以完成範例
+
+
+6. 宿主機（即本地端主機）建立Repo資料夾
+
+
+7. vim docker-compose.yml
+- 內容：
+- ：wq
+
+
+8. 於./Repo$ docker-compose up -d
+
+
+9. 輸入本機端IP:8888連接container端口:8888
+
+10.成功連線
